@@ -1,0 +1,56 @@
+.news-item {
+    position: relative;
+    height: 350px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    margin-bottom: 40px;
+}
+
+.news-item:last-child {
+    margin-bottom: 0;
+}
+
+.news-item::after {
+    background: url('../image/suzy-hazelwood.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.news-item:hover::after {
+    opacity: 0.3;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.news-item__condition {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 50px);
+    display: none;
+    font-weight: 600;
+    text-align: center;
+}
+
+.news-item:hover .news-item__condition {
+    display: block;
+}
+
+.new-item__title {
+    background-color: #ff66ff;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 0;
+    color: #fff;
+}

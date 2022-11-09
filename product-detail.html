@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/image/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/product.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <title>Homepage</title>
+</head>
+<body>
+    <header class="header py-2">
+        <div class="container-fluid">
+            <div class="header-desktop">
+                <div class="logo">
+                    <a href="/cosmetics/index.html" class="d-flex align-items-center">
+                        <img src="./assets/image/logo.png" alt="Menca">
+                        <h2 class="logo__title">MENCA</h2>
+                    </a>
+
+                    <div class="logo__search">
+                        <input class="form-control form-control-sm" placeholder="Tìm kiếm sản phẩm...">
+                    </div>
+                </div>
+
+                <div class="header-navbar">
+                    <ul class="header-navbar__menu">
+                        <li class="product-link">
+                            <a href="./product.html">Sản phẩm</a>
+                            <ul class="product-link__list">
+                                <li><a href=""><img class="me-1" src="./assets/image/cosmetics.png" alt="Cosmetics"> Mĩ phẩm</a></li>
+                                <li><a href=""><img class="me-1" src="./assets/image/medicine.png" alt="Medicine"> Thực phẩm chức năng</a></li>
+                                <li><a href=""><img class="me-1" src="./assets/image/perfume.png" alt="Perfume"> Nước hoa</a></li>
+                                <li><a href="#"><img class="me-1" src="./assets/image/sale.png" alt="Sale hour"> Sale</a></li>
+                                <li><a href="#"><img class="me-1" src="./assets/image/diffirence.png" alt="Diffirence product"> Sản phẩm khác</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="./cart.html">
+                                <button type="button" class="btn btn-cart">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    <span class="fw-semibold">Giỏ hàng</span>
+                                    <span class="badge text-bg-danger">0</span>
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="header-mobile">
+                <div class="d-flex align-items-center justify-content-between d-md-none">
+                    <i 
+                        class="fa-solid fa-bars header-mobile__bar fa-2x"
+                        onclick="handleOpenMenu()"
+                    ></i>
+
+                    <div class="header-mobile__menu animate__animated animate__fadeInLeft">
+                        <div class="text-end">
+                            <i 
+                                class="fa-regular fa-rectangle-xmark fa-2x"
+                                onclick="handleClose()"
+                            ></i>
+                        </div>
+                        <ul class="ps-0">
+                            <li class="ms-0 mb-3 mt-4"><h6 class="text-center">DANH MỤC SẢN PHẨM</h6></li>
+                            <li class="ms-0 mb-3"><a href=""><img class="me-1" src="./assets/image/cosmetics.png" alt="Cosmetics"> Mĩ phẩm</a></li>
+                            <li class="ms-0 mb-3"><a href=""><img class="me-1" src="./assets/image/medicine.png" alt="Medicine"> Thực phẩm chức năng</a></li>
+                            <li class="ms-0 mb-3"><a href=""><img class="me-1" src="./assets/image/perfume.png" alt="Perfume"> Nước hoa</a></li>
+                            <li class="ms-0 mb-3"><a href=""><img class="me-1" src="./assets/image/sale.png" alt="Sale hour"> Sale</a></li>
+                            <li class="ms-0"><a href=""><img class="me-1" src="./assets/image/diffirence.png" alt="Diffirence product"> Sản phẩm khác</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="logo">
+                        <a href="/cosmetics/index.html" class="d-flex align-items-center">
+                            <img src="./assets/image/logo.png" alt="Menca">
+                            <h2 class="logo__title">MENCA</h2>
+                        </a>
+                    </div>
+
+                    <a href="./cart.html">
+                        <button type="button" class="btn btn-cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            <span class="badge text-bg-danger">0</span>
+                        </button>
+                    </a>
+                </div>
+
+                <div class="header-mobile__search mt-2">
+                    <input class="form-control form-control-sm" placeholder="Tìm kiếm sản phẩm...">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="product-detail py-4 py-xl-5">
+        <div class="container">
+            <h4 class="category-title text-center mb-3 mb-md-4"><span>CHI TIẾT SẢN PHẨM</span></h4>
+
+            <div class="row">
+                <div class="col-12 col-md-7 mb-4 mb-md-0">
+                    <!-- Main view of our gallery -->
+                    <div class="main_view">
+                        <img src="./assets/image/product-1.jpg" id="main" alt="IMAGE">
+                    </div>
+            
+                    <!-- All images with side view -->
+                    <div class="side_view">
+                        <img src="./assets/image/product-1.jpg" onclick="change(this.src)">
+                        <img src="./assets/image/product-2.jpg" onclick="change(this.src)">
+                        <img src="./assets/image/product-3.jpg" onclick="change(this.src)">
+                        <img src="./assets/image/product-4.jpg" onclick="change(this.src)">
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-5">
+                    <h5 class="product-detail__title">Alpha Organic MCT Oil</h5>
+
+                    <div class="product-detail__attribute">
+                        <div class="mb-3">
+                            <h6>Màu sắc</h6>
+                            <button class="cosmetics-btn">Xanh</button>
+                            <button class="cosmetics-btn">Đỏ</button>
+                            <button class="cosmetics-btn">Đen</button>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6>Kích thước</h6>
+                            <button class="cosmetics-btn">S</button>
+                            <button class="cosmetics-btn">M</button>
+                            <button class="cosmetics-btn">L</button>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6>Trọng lượng</h6>
+                            <button class="cosmetics-btn">600g</button>
+                            <button class="cosmetics-btn">800g</button>
+                            <button class="cosmetics-btn">1200g</button>
+                        </div>
+
+                        <div class="mb-3">
+                            <h6>Giá</h6>
+                            <span class="text-danger me-2 fw-bold fs-4">1.200.000đ</span>
+                            <span class="text-dark text-decoration-line-through fw-bold fs-5">1.500.000đ</span>
+                        </div>
+
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h6>Số lượng</h6>
+                            <div class="d-flex">
+                                <div class="value-button" id="decrease" onclick="decreaseValue()" value="Decrease Value">
+                                    <i class="fa-solid fa-minus"></i>
+                                </div>
+                                <input type="number" id="number" value="1" min="1" max="100"/>
+                                <div class="value-button" id="increase" onclick="increaseValue()" value="Increase Value">
+                                    <i class="fa-solid fa-plus"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="my-5 text-center">
+                            <button class="cosmetics-btn cosmetics-btn--cart">Thêm vào giỏ hàng</button>
+                            <button class="cosmetics-btn cosmetics-btn--cart">Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-detail__guide pt-4">
+                <div class="tab">
+                    <button class="tablinks active" onclick="activeTab(event, 'description')" id="'default">Thông tin</button>
+                    <button class="tablinks" onclick="activeTab(event, 'policy')">Chính sách đổi trả</button>
+                    <button class="tablinks" onclick="activeTab(event, 'guide-buy')">Hướng dẫn mua hàng</button>
+                  </div>
+                  
+                  <div id="description" class="tabcontent">
+                    Alpha Organic MCT oil - cho một sức khỏe não bộ, sức khỏe đường ruột, sức khỏe tim mạch khỏe mạnh . Là nguồn bổ sung năng lượng tuyệt vời và là sản phẩm quan trọng đối với những người đang ăn kiêng ketogenic. Sản phẩm tự hào made in Canada 🇨🇦 
+                  </div>
+                  
+                  <div id="policy" class="tabcontent">
+                    <p><strong>(Lưu ý : Hàng đã Sale (giảm giá) không đổi trả trong trường hợp phát sinh chủ quan từ phía khách hàng - Không nhận đổi trả hàng trong trường hợp khách hàng giao dịch trực tiếp tại cửa hàng, mua về không ưng ý muốn trả hàng)</strong></p>
+                    <p><strong>1. Hàng giao không mới, không nguyên vẹn, sai nội dung hoặc bị thiếu</strong></p>
+                    <p>Chúng tôi khuyến khích quý khách hàng phải kiểm tra tình trạng bên ngoài của thùng hàng và sản phẩm trước khi thanh toán để đảm bảo rằng hàng hóa được giao đúng chủng loại, số lượng, màu sắc theo đơn đặt hàng và tình trạng bên ngoài không bị tác động.</p>
+                    <p>Nếu gặp trường hợp này, Quý khách vui lòng từ chối nhận hàng và/hoặc báo ngay cho bộ phận hỗ trợ khách hàng để chúng tôi có phương án xử lí kịp thời. (Xin lưu ý những bước kiểm tra sâu hơn như dùng thử sản phẩm chỉ có thể được chấp nhận sau khi đơn hàng được thanh toán đầy đủ).</p>
+                    <p>Trong trường hợp khách hàng đã thanh toán, nhận hàng và sau đó phát hiện hàng hóa không còn mới nguyên vẹn, sai nội dung hoặc thiếu hàng, xin vui lòng chụp ảnh sản phẩm gửi về fanpage của chúng tôi để được chúng tôi hỗ trợ các bước tiếp theo như đổi/trả hàng hoặc gửi sản phẩm còn thiếu đến quý khách…</p>
+                    <p>Sau 48h kể từ ngày quý khách nhận hàng, chúng tôi có quyền từ chối hỗ trợ cho những khiếu nại theo nội dung như trên.</p>
+                    <p><strong>2. Hàng giao bị lỗi, hoặc không vừa size</strong></p>
+                    <p>Khi quý khách gặp trục trặc với sản phẩm đặt mua của chúng tôi, vui lòng thực hiện các bước sau đây</p>
+                    <p><i class="fa-solid fa-check"></i> Bước 1: Kiểm tra lại sự nguyên vẹn của sản phẩm, chụp lại ảnh sản phẩm xuất hiện lỗi, hoặc báo size lệch</p>
+                    <p><i class="fa-solid fa-check"></i> Bước 2: Quý khách liên hệ với cửa hàng của chúng tôi để được xác nhận</p>
+                    <p><i class="fa-solid fa-check"></i> Bước 3: Trong vòng 30 ngày kể từ ngày nhận hàng, nếu quý khách được xác nhận từ bộ phận chăm sóc khách hàng rằng sản phẩm bị lỗi kỹ thuật, quý khách vui lòng truy cập ngay hotline của shop hoặc fanpage để bắt đầu quy trình đổi trả hàng</p>
+                  </div>
+                  
+                  <div id="guide-buy" class="tabcontent">
+                    <p><strong><i class="fa-solid fa-circle-arrow-right"></i> MENCA nhận giao hàng COD trên toàn quốc :</strong></p>
+                    <p>- Đối với khách đặt hàng COD vui lòng chọn màu sắc size số sản phẩm theo website và note lại ghi chú cụ thể nếu có. Trước khi giao hàng chúng tôi sẽ gọi điện xác nhận lại cho quý khách hàng để chốt đơn</p>
+                    <p>- Đối với khách hàng chuyển khoản xin vui lòng liên hệ OFFCIAL FANPAGE của chúng tôi để đặt hàng và ghi chú nội dung bao gồm sđt đơn hàng khi chuyển khoản/</p>
+                    <p><i class="fa-solid fa-circle-arrow-right"></i> <strong>Thông tin chuyển khoản :</strong></p>
+                    <p><i><i class="fa-solid fa-check"></i> Chủ tài khoản : NGUYỄN THỊ THANH</i></p>
+                    <p><i><i class="fa-solid fa-check"></i> MB bank : 0372834313 - Chi nhánh Hải Dương</i></p>
+                    <p><i><i class="fa-solid fa-check"></i> Hotline : 037.283.4313 - 0974.836.136</i></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <div class="logo text-center">
+                        <a href="/cosmetics/index.html" class="d-flex align-items-center">
+                            <img src="./assets/image/logo.png" alt="Menca">
+                            <h2 class="logo__title">MENCA</h2>
+                        </a>
+                    </div>
+
+                    <h6 class="mt-2"><i>Chuyên hàng xách tay Mỹ & Canada</i></h6>
+
+                    <ul class="ps-0 mb-0 list-unstyled">
+                        <li><i class="fa-solid fa-location-dot"></i> Địa chỉ: TP.Hải Dương</li>
+                        <li>
+                            <span><i class="fa-solid fa-mobile-screen"></i> Điện thoại:</span>
+                            <a href="tel:+84372834313">0372834313</a>
+                            <span>-</span>
+                            <a href="tel:+84974836136">0974836136</a>
+                        </li>
+                        <li class="d-block d-md-none"><a href="/cosmetics/about.html"><i class="fa-solid fa-user-group"></i> Giới thiệu</a></li>
+                        <li class="d-block d-md-none"><a href="/cosmetics/news.html"><i class="fa-regular fa-newspaper"></i> Tin tức</a></li>
+                        <li class="d-block d-md-none">
+                            <span class="mb-1 d-inline-block">Kết nối với shop</span>
+                            <br>
+                            <a class="me-2" href="https://m.me/1481535668548986" target="_blank"><img src="./assets/image/fb.png" alt="Facebook"></a>
+                            <a class="me-2" href="https://shopee.vn/menca" target="_blank"><img src="./assets/image/shopee.png" alt=""></a>
+                            <a href="" target="_blank"><img src="./assets/image/zalo.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="d-none d-md-block col-md-4">
+                    <h6>HỖ TRỢ KHÁCH HÀNG</h6>
+                    <ul class="ps-0 mb-0 list-unstyled">
+                        <li><a href="/cosmetics/about.html"><i class="fa-solid fa-user-group"></i> Giới thiệu</a</li>
+                        <li><a href="/cosmetics/news.html"><i class="fa-regular fa-newspaper"></i> Tin tức</a></li>
+                    </ul>
+                </div>
+
+                <div class="d-none d-md-block col-md-3">
+                    <h6>KẾT NỐI VỚI SHOP</h6>
+                    <a class="me-2" href="https://m.me/1481535668548986" target="_blank"><img src="./assets/image/fb.png" alt="Facebook"></a>
+                    <a class="me-2" href="https://shopee.vn/menca" target="_blank"><img src="./assets/image/shopee.png" alt=""></a>
+                    <a href="" target="_blank"><img src="./assets/image/zalo.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/js/bootstrap.bundle.min.js" integrity="sha512-1TK4hjCY5+E9H3r5+05bEGbKGyK506WaDPfPe1s/ihwRjr6OtL43zJLzOFQ+/zciONEd+sp7LwrfOCnyukPSsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/handle-menu-bar.js"></script>
+    <script src="./assets/js/product-detail.js"></script>
+    <script src="./assets/js/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/image/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/about.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <title>Homepage</title>
+</head>
+<body>
+    <header class="header py-2">
+        <div class="container-fluid">
+            <div class="header-desktop">
+                <div class="logo">
+                    <a href="/cosmetics/index.html" class="d-flex align-items-center">
+                        <img src="./assets/image/logo.png" alt="Menca">
+                        <h2 class="logo__title">MENCA</h2>
+                    </a>
+
+                    <div class="logo__search">
+                        <input class="form-control form-control-sm" placeholder="Tìm kiếm sản phẩm...">
+                    </div>
+                </div>
+
+                <div class="header-navbar">
+                    <ul class="header-navbar__menu">
+                        <li class="product-link">
+                            <a href="./product.html">Sản phẩm</a>
+                            <ul class="product-link__list">
+                                <li><a href=""><img class="me-1" src="./assets/image/cosmetics.png" alt="Cosmetics"> Mĩ phẩm</a></li>
+                                <li><a href=""><img class="me-1" src="./assets/image/medicine.png" alt="Medicine"> Thực phẩm chức năng</a></li>
+                                <li><a href=""><img class="me-1" src="./assets/image/perfume.png" alt="Perfume"> Nước hoa</a></li>
+                                <li><a href="#"><img class="me-1" src="./assets/image/sale.png" alt="Sale hour"> Sale</a></li>
+                                <li><a href="#"><img class="me-1" src="./assets/image/diffirence.png" alt="Diffirence product"> Sản phẩm khác</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li>
+                            <a href="./cart.html">
+                                <button type="button" class="btn btn-cart">
+                                    <i class="fa-solid fa-cart-plus"></i>
+                                    <span class="fw-semibold">Giỏ hàng</span>
+                                    <span class="badge text-bg-danger">0</span>
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="header-mobile">
+                <div class="d-flex align-items-center justify-content-between d-md-none">
+                    <i 
+                        class="fa-solid fa-bars header-mobile__bar fa-2x"
+                        onclick="handleOpenMenu()"
+                    ></i>
+
+                    <div class="header-mobile__menu animate__animated animate__fadeInLeft">
+                        <div class="text-end">
+                            <i 
+                                class="fa-regular fa-rectangle-xmark fa-2x"
+                                onclick="handleClose()"
+                            ></i>
+                        </div>
+                        <ul class="ps-0">
+                            <li class="ms-0 mb-3 mt-4"><h6 class="text-center">DANH MỤC SẢN PHẨM</h6></li>
+                            <li class="ms-0 mb-3"><a href=""><img class="me-1" src="./assets/image/cosmetics.png" alt="Cosmetics"> Mĩ phẩm</a></li>
+                            <li class="ms-0 mb-3"><a href=""><img class="me-1" src="./assets/image/medicine.png" alt="Medicine"> Thực phẩm chức năng</a></li>
+                            <li class="ms-0 mb-3"><a href=""><img class="me-1" src="./assets/image/perfume.png" alt="Perfume"> Nước hoa</a></li>
+                            <li class="ms-0 mb-3"><a href=""><img class="me-1" src="./assets/image/sale.png" alt="Sale hour"> Sale</a></li>
+                            <li class="ms-0"><a href=""><img class="me-1" src="./assets/image/diffirence.png" alt="Diffirence product"> Sản phẩm khác</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="logo">
+                        <a href="/cosmetics/index.html" class="d-flex align-items-center">
+                            <img src="./assets/image/logo.png" alt="Menca">
+                            <h2 class="logo__title">MENCA</h2>
+                        </a>
+                    </div>
+
+                    <a href="./cart.html">
+                        <button type="button" class="btn btn-cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                            <span class="badge text-bg-danger">0</span>
+                        </button>
+                    </a>
+                </div>
+
+                <div class="header-mobile__search mt-2">
+                    <input class="form-control form-control-sm" placeholder="Tìm kiếm sản phẩm...">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="about py-4 py-xl-5">
+        <div class="container">
+            <h4 class="category-title text-center mb-4"><span>VỀ CHÚNG TÔI</span></h4>
+            <img class="about-img" src="./assets/image/about.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto autem quam eum earum aliquam laboriosam fuga, ex, mollitia aliquid provident iste? Tempore omnis, officiis in ipsa quia nemo dolore repellendus temporibus et deleniti reiciendis alias facilis nobis totam excepturi fugit est vitae dolorum obcaecati corrupti natus dolorem, doloremque exercitationem placeat! Atque sapiente mollitia beatae delectus, nesciunt, praesentium id voluptates error at temporibus aspernatur exercitationem explicabo. Ullam animi quidem, error aperiam dolores omnis molestias iste porro. Voluptatibus, obcaecati voluptas explicabo odio quasi nisi officiis natus magnam eos, iste, quos aliquid! Reprehenderit rerum optio odio quasi magni similique eos aliquid tempore soluta aspernatur doloribus fuga, vero nemo mollitia eligendi id placeat, necessitatibus quas commodi error corrupti. Excepturi laborum culpa id, et neque in aperiam sit, velit earum quos vel tempore dolore esse itaque deserunt rem optio minima reprehenderit saepe dicta amet iste placeat porro iure? Praesentium exercitationem labore laboriosam, deserunt at sit mollitia quae nulla qui eum voluptates nam dignissimos hic. Reiciendis beatae eos provident harum cum nobis, nam eveniet dolorum saepe aliquam vitae illum debitis sit consequatur repellat vel voluptate aspernatur tenetur, esse officiis mollitia dolorem minus voluptatibus quod! Aliquid odio facilis sint voluptatibus eveniet. Qui officia dolores laborum voluptatibus incidunt?</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <div class="logo text-center">
+                        <a href="/cosmetics/index.html" class="d-flex align-items-center">
+                            <img src="./assets/image/logo.png" alt="Menca">
+                            <h2 class="logo__title">MENCA</h2>
+                        </a>
+                    </div>
+
+                    <h6 class="mt-2"><i>Chuyên hàng xách tay Mỹ & Canada</i></h6>
+
+                    <ul class="ps-0 mb-0 list-unstyled">
+                        <li><i class="fa-solid fa-location-dot"></i> Địa chỉ: TP.Hải Dương</li>
+                        <li>
+                            <span><i class="fa-solid fa-mobile-screen"></i> Điện thoại:</span>
+                            <a href="tel:+84372834313">0372834313</a>
+                            <span>-</span>
+                            <a href="tel:+84974836136">0974836136</a>
+                        </li>
+                        <li class="d-block d-md-none"><a href="/cosmetics/about.html"><i class="fa-solid fa-user-group"></i> Giới thiệu</a></li>
+                        <li class="d-block d-md-none"><a href="/cosmetics/news.html"><i class="fa-regular fa-newspaper"></i> Tin tức</a></li>
+                        <li class="d-block d-md-none">
+                            <span class="mb-1 d-inline-block">Kết nối với shop</span>
+                            <br>
+                            <a class="me-2" href="https://m.me/1481535668548986" target="_blank"><img src="./assets/image/fb.png" alt="Facebook"></a>
+                            <a class="me-2" href="https://shopee.vn/menca" target="_blank"><img src="./assets/image/shopee.png" alt=""></a>
+                            <a href="" target="_blank"><img src="./assets/image/zalo.png" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="d-none d-md-block col-md-4">
+                    <h6>HỖ TRỢ KHÁCH HÀNG</h6>
+                    <ul class="ps-0 mb-0 list-unstyled">
+                        <li><a href="/cosmetics/about.html"><i class="fa-solid fa-user-group"></i> Giới thiệu</a</li>
+                        <li><a href="/cosmetics/news.html"><i class="fa-regular fa-newspaper"></i> Tin tức</a></li>
+                    </ul>
+                </div>
+
+                <div class="d-none d-md-block col-md-3">
+                    <h6>KẾT NỐI VỚI SHOP</h6>
+                    <a class="me-2" href="https://m.me/1481535668548986" target="_blank"><img src="./assets/image/fb.png" alt="Facebook"></a>
+                    <a class="me-2" href="https://shopee.vn/menca" target="_blank"><img src="./assets/image/shopee.png" alt=""></a>
+                    <a href="" target="_blank"><img src="./assets/image/zalo.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.1/js/bootstrap.bundle.min.js" integrity="sha512-1TK4hjCY5+E9H3r5+05bEGbKGyK506WaDPfPe1s/ihwRjr6OtL43zJLzOFQ+/zciONEd+sp7LwrfOCnyukPSsg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./assets/js/handle-menu-bar.js"></script>
+</body>
+</html>

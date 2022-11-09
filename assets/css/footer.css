@@ -1,0 +1,29 @@
+.footer {
+    background-color: #ffe6ff;
+    padding: 20px 0;
+    height: 316px;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        height: 212px;
+    }
+}
+
+.footer li {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.footer li:last-child {
+    margin-bottom: 0;
+}
+
+.footer li a{
+    color: #000;
+    text-decoration: none;
+}
+
+.footer li a:hover{
+    color: #0D6EFD;
+}
